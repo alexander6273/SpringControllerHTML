@@ -5,80 +5,106 @@
     <title>Weekendavisen element</title>
     <style>
         .waDiv{
+
             border-style: solid;
-            border-color: lightblue;
+            border-color: dodgerblue;
             border-width: 3px;
             font-style: font-effect: engrave;:
             font-size-adjust: initial;
             margin: auto;
-            width: fit-content;
-            height: fit-content;
-            display: inline-block;
+            width: 76em;
+            height: 45em;
+
         }
 
-        .boxes{
+        .box{
+            display: inline-block;
+            padding: 50px;
+            width: max-content;
+            height: fit-content;
+            /*border: dodgerblue;
+            border-width: 0px;
+            border-right-width: 1px;
+            border-style: solid;*/
+        }
 
+        #picture{
+            border: dodgerblue;
+            border-width: 0px;
+            border-right-width: 1px;
+            border-style: solid;
         }
 
         #boatPNG{
-            width: 10%;
-            height: 10%;
+            height: 22em;
+            width: 30em;
         }
 
         #humansPNG{
-            width: 10%;
-            height: 10%;
+            height: 22em;
+            width: 30em;
         }
 
         .top{
-            font-size: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 20px;
         }
 
         .middle{
             font-size: 30px;
+            font-weight: 7;
         }
 
         .bottom{
-            font-size: 20px;
+            font-size: 15px;
+
         }
 
         .author{
-            font-size: 10px;
+            font-size: 13px;
             font-weight: bolder;
         }
     </style>
 </head>
 <body>
     <div class="waDiv">
-        <div class="boxes">
-            <div>
+        <div id="picture" class="box" style="border-right-width: 2px">
+            <div class="picture">
                 <img id="boatPNG" src="../static/Boat.jpg">
             </div>
-            <div class="top">
-                Baggrund
-            </div>
-            <div class="middle">
+            <center class="top">
+                <span style="color: dodgerblue;">BAGGRUND</span>
+            </center>
+            <center class="middle">
                 Urkaine er kun begyndelsen
-            </div>
-            <div class="bottom">
-                <blockquote>
-                    USA og Europa kan se frem til atomtrusler, militærøvelser
-                </blockquote>
-                <blockquote>
-                    og mulig provokationer.
-                </blockquote>
-
-            </div>
-            <div class="author">
-                Andrey Kazankov
-            </div>
+            </center>
+            <center class="bottom">
+                <p>USA og Europa kan se frem til atomtrusler, militærøvelser og mulige</p>
+                <p>provokationer.</p>
+            </center>
+            <center class="author">
+                ANDREY KAZANKOV
+            </center>
         </div>
-        <div class="boxes">
-            <div>
+        <div class="box">
+            <div class="picture">
                 <img id="humansPNG" src="../static/Humans.jpg">
             </div>
+            <center class="top">
+                <span style="color: dodgerblue;">REPORTAGE</span>
+            </center>
+            <center class="middle">
+                <p>I de seneste år er Ukraine blevet</p>
+                <p>mere samlet og mindre prorussisk</p>
+            </center>
+            <center class="bottom">
+                Ikke mindst takket være Vladimir Putin
+            </center>
+            <center class="author">
+                ANDREY KAZANKOV
+            </center>
         </div>
     </div>
-
 </body>
 </html>
